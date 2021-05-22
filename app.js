@@ -51,6 +51,7 @@ router.get('/auth/facebook/callback', passport.authenticate('facebook', { failur
     res.redirect('/')
   }
 )
+router.get('/')
 
 // Cau hinh body-parser
 
@@ -78,6 +79,6 @@ app.use('/', router)
 // Run server
 var server = https.createServer(options, app);
 
-server.listen(3000, function () {
+server.listen(process.env.PORT, function () {
   console.log("server running at https://localhost:3000/");
 });

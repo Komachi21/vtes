@@ -78,7 +78,7 @@ app.use('/', router)
 // Run server
 var server = https.createServer(options, app);
 
-const PORT = process.env.PORT || ;
+const PORT = process.env.PORT || 3000;
 server.listen(PORT, function () {
   console.log("server running at https://localhost:3000/");
 });

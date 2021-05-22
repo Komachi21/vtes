@@ -72,7 +72,6 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 // Routes
-app.use('/', router)
 
 
 

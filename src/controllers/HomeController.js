@@ -1,5 +1,5 @@
 const index = function (req, res) {
-  res.json(req.user)
+  res.send('HELLO')
 }
 
 module.exports = {
